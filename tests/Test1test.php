@@ -12,7 +12,7 @@
       $result = $this->Test1->add(2,5);
 
       $this->assertEquals(7, $result);
-//uuiuu
+
       $result = $this->Test1->add(6,5);
 
       $this->assertEquals(11, $result);
