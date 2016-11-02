@@ -17,18 +17,18 @@ class autoload {
             } elseif (substr($file->getFilename(), -4) === '.php') {
                 // save the class name / path of a .php file found
                 $className = substr($file->getFilename(), 0, -4);
-                AutoLoader::registerClass($className, $file->getPathname());
+                autoload::registerClass($className, $file->getPathname());
             }
         }
     }
 
     public static function registerClass($className, $fileName) {
-        AutoLoader::$classNames[$className] = $fileName;
+        autoload::$classNames[$className] = $fileName;
     }
 
     public static function loadClass($className) {
-        if (isset(AutoLoader::$classNames[$className])) {
-            require_once(AutoLoader::$classNames[$className]);
+        if (isset(autoload::$classNames[$className])) {
+            require_once(autoload::$classNames[$className]);
         }
      }
 
