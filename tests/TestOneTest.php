@@ -1,10 +1,10 @@
 <?php
-  class Test1test extends PHPUnit_Framework_TestCase{
+  class TestOneTest extends PHPUnit_Framework_TestCase{
     private $Test1;
 
     protected function setUp()
     {
-        $this->Test1 = new Test1();
+        $this->Test1 = new TestOne();
     }
 
     function testAdd(){
@@ -14,7 +14,7 @@
 
       $result = $this->Test1->add(6,5);
 
-      $this->assertEquals(11, $result);
+      $this->assertEquals(12, $result);
     }
 
   }
