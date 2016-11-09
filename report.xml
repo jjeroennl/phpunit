@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="tests/" tests="2" assertions="3" failures="1" errors="0" time="0.006396">
+    <testsuite name="TestOneTest" file="/var/www/html/phpunit/tests/TestOneTest.php" tests="1" assertions="2" failures="1" errors="0" time="0.005519">
+      <testcase name="testAdd" class="TestOneTest" file="/var/www/html/phpunit/tests/TestOneTest.php" line="10" assertions="2" time="0.005519">
+        <failure type="PHPUnit_Framework_ExpectationFailedException">TestOneTest::testAdd
+Failed asserting that 11 matches expected 12.
+
+/var/www/html/phpunit/tests/TestOneTest.php:17
+</failure>
+      </testcase>
+    </testsuite>
+    <testsuite name="TestTwoTest" file="/var/www/html/phpunit/tests/TestTwoTest.php" tests="1" assertions="1" failures="0" errors="0" time="0.000877">
+      <testcase name="testAdd" class="TestTwoTest" file="/var/www/html/phpunit/tests/TestTwoTest.php" line="14" assertions="1" time="0.000877"/>
+    </testsuite>
+  </testsuite>
+</testsuites>
