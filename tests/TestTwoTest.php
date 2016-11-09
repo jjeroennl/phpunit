@@ -1,7 +1,5 @@
 <?php
 
-// include '../src/TestTwo.php';
-
 class TestTwoTest extends PHPUnit_Framework_TestCase
 {
     private $test;
