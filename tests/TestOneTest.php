@@ -14,7 +14,7 @@
 
       $result = $this->Test1->add(6,5);
 
-      $this->assertEquals(12, $result);
+      $this->assertEquals(11, $result);
     }
 
   }
